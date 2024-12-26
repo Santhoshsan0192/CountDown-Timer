@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer and Current Date/Time</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>   
+        <nav>
+            <ul>
+                <li><a href="index.html" class="hov">Home</a></li>
+                <li><a href="SetTimer.html"  class="hov">Create Timer</a></li>
+                <li><a href="time.html" class="hov">Stop Watch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to Countdown Timer</h1>
+            <p>Create and manage your countdown timers with ease.</p>
+            <a class="cta-btn" href="SetTimer.html">Create Your Timer</a>
+        </section><br><br>
+
+        <section class="datetime">
+            <h1>Current Date and Time</h1>
+            <div class="datetime-box">
+                <div class="time-box">
+                    <span id="date" class="time-value">Loading...</span>
+                    <span class="time-label">Date</span>
+                </div>
+                <div class="time-box">
+                    <span id="month" class="time-value">Loading...</span>
+                    <span class="time-label">Month</span>
+                </div>
+                <div class="time-box">
+                    <span id="year" class="time-value">0000</span>
+                    <span class="time-label">Year</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours" class="time-value">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes" class="time-value">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds" class="time-value">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <b class="foot">Don’t count the days, make the Days Count</b>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

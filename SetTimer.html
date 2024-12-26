@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Countdown Timer</title>
+    <link rel="stylesheet" href="SetTimer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Create Timer</a></li>
+                <li><a href="time.html" class="hov">Stop Watch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="timer-config">
+            <h1>Create Your Countdown Timer</h1>
+            <form id="timer-form" class="form-layout">
+                <div class="form-group">
+                    <label for="years">Years:</label>
+                    <input type="number" id="years" min="0" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="days">Days:</label>
+                    <input type="number" id="days" min="0" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="hours">Hours:</label>
+                    <input type="number" id="hours" min="0" max="23" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="minutes">Minutes:</label>
+                    <input type="number" id="minutes" min="0" max="59" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="seconds">Seconds:</label>
+                    <input type="number" id="seconds" min="0" max="59" value="0">
+                </div>
+            </form>
+            <div class="buttons">
+                <button type="button" id="startBtn" onclick="startCountdown()">Start Timer</button>
+                <button type="button" id="stopBtn" onclick="stopCountdown()">Stop Timer</button>
+                <button type="button" id="resetBtn" onclick="resetCountdown()">Reset Timer</button>
+            </div><br><br>
+            <div id="timer-display" class="timer-display">
+                <p id="countdown">00:00:00:00:00</p>
+            </div>
+        </section>
+    </main>
+    <script src="SetTimer.js"></script>
+</body>
+</html>
